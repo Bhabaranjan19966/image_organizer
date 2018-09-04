@@ -1,2 +1,13 @@
-@import 'custom';
-@import '~bootstrap/scss/bootstrap';
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+$Hero_width: 100vw;
+$Hero_height: 92vh;
+
+.adding {
+  background-image: url(../Drawables/images/Hero.jpg);
+  width: $Hero_width;
+  height: $Hero_height;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
