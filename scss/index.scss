@@ -1,8 +1,48 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 
-$Hero_width: 100vw;
-$Hero_height: 92vh;
+$Hero_width: inherit1;
+$Hero_height: 94vh;
+$text_color: white;
+
+
+@mixin D3_effect {
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 4px 3px rgba(0, 0, 0, 0.1),
+    0px 4px 3px rgba(0, 0, 0, 0.1);
+  color: $text_color;
+}
+
+@mixin adopt_hr {
+  hr {
+    width: 50vw;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  }
+}
+@mixin adopt_background {
+  background: rgb(61, 59, 59);
+}
+
+
+@mixin adopt_font {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.Hero_section {
+  padding: 13%;
+  @include adopt_hr;
+  @include D3_effect;
+  @include adopt_font;
+}
+.fa-user-plus {
+  font-size: 18px;
+}
+.fa-camera-retro {
+  font-size: 25px;
+}
+.fa-sign-in {
+  font-size: 20px;
+}
 
 .adding {
   background-image: url(../Drawables/images/Hero.jpg);
@@ -10,4 +50,84 @@ $Hero_height: 92vh;
   height: $Hero_height;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: $text_color;
+}
+#Weeks_top {
+  @include D3_effect;
+  @include adopt_hr;
+  text-align: center;
+}
+#slider {
+  @include adopt_background;
+}
+
+.csize{
+  width: 294px;
+  height:210px;
+  @include adopt_font;
+}
+.def_margin{
+  margin-top: 20px;
+  margin-left: 10px; 
+
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+#the_container1{
+  @include adopt_background;
+}
+body{
+ @include adopt_background;
+}
+#image_secion{
+  margin:0px;
 }
