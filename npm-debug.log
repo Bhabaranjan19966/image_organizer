@@ -1,5 +1,5 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'start', 'dev' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
 4 verbose stack Error: missing script: start
@@ -14,7 +14,7 @@
 4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:511:3)
 5 verbose cwd /home/niit/assignments/a2/root/webpack-bootstrap-setup
 6 error Linux 4.15.0-32-generic
-7 error argv "/usr/bin/node" "/usr/bin/npm" "start"
+7 error argv "/usr/bin/node" "/usr/bin/npm" "start" "dev"
 8 error node v8.10.0
 9 error npm  v3.5.2
 10 error missing script: start
