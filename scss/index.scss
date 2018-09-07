@@ -1,26 +1,21 @@
 @import "custom";
 @import "~bootstrap/scss/bootstrap";
 // @import '../node_modules/animate.css/source/fading_entrances/fadeInUp.css';
-
 $Hero_width: inherit;
 $Hero_height: 100vh;
 $text_color: white;
-
 @mixin D3_effect {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 4px 3px rgba(0, 0, 0, 0.1),
     0px 4px 3px rgba(0, 0, 0, 0.1);
   color: $text_color;
 }
-
 @mixin adopt_margin {
   margin: 0px;
 }
-
 @mixin adopt_box_shadow {
   box-shadow: 5px 6px 5px rgba(0, 0, 0, 0.4), 5px 6px 5px rgba(0, 0, 0, 0.1),
     5px 6px 5px rgba(0, 0, 0, 0.1);
 }
-
 @mixin adopt_hr {
   hr {
     width: 50vw;
@@ -31,11 +26,9 @@ $text_color: white;
 @mixin adopt_background {
   background: rgb(61, 59, 59);
 }
-
 @mixin adopt_font {
   font-family: "Merriweather Sans", sans-serif;
 }
-
 .Hero_section {
   padding: 13%;
   margin-top: 4%;
@@ -66,7 +59,6 @@ iframe {
 #slider {
   @include adopt_background;
 }
-
 .csize {
   width: 294px;
   height: 210px;
@@ -81,7 +73,6 @@ iframe {
 .fa-sign-in {
   font-size: 20px;
 }
-
 .adding {
   background-image: url(../Drawables/images/Hero.jpg);
   width: $Hero_width;
@@ -92,7 +83,6 @@ iframe {
   text-align: center;
   color: $text_color;
 }
-
 .def_margin {
   margin-top: 20px;
   margin-left: 10px;
@@ -111,7 +101,6 @@ iframe {
   background-color: rgb(0, 0, 0);
   background-color: rgba(0, 0, 0, 0.9);
 }
-
 /* Modal Content (image) */
 .modal-content {
   margin: auto;
@@ -119,7 +108,6 @@ iframe {
   width: 80%;
   max-width: 700px;
 }
-
 /* Caption of Modal Image */
 #caption {
   margin: auto;
@@ -140,7 +128,6 @@ iframe {
   font-weight: bold;
   transition: 0.3s;
 }
-
 .close:hover,
 .close:focus {
   color: red;
@@ -165,6 +152,7 @@ footer {
 body {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
 }
 .the_card_class {
   margin-top: 10px;
@@ -198,9 +186,24 @@ body {
   padding-top: 1em;
   font-size: 1.5em;
 }
-.navbar{
-  font-size:1.2em;
+.navbar {
+  font-size: 1.2em;
 }
-#sec2{
+#sec2 {
   text-align: center;
+}
+#the_cbody {
+  background: black;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 400;
+  @include adopt_box_shadow;
+}
+.card-body {
+  font-family: "Courier New", Courier, monospace;
+}
+.card-title {
+  font-weight: bold;
 }
